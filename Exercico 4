@@ -1,0 +1,23 @@
+lista = []
+Par = []
+impar =[]
+
+while True:
+    n = int(input("Digite um valor: "))
+    
+    if n not in lista:
+       lista.append(n)
+       print("Valor adicionado com sucesso...")
+       if n % 2 != 0:
+            impar.append(n)
+       else:
+           Par.append(n)
+        
+    r = str(input("Quer continuar? [S/N]: "))
+    if r in "Nn":
+      break
+
+print('-='*30)
+print(f'Você digitou os valores:  {lista}')
+print(f'Você digitou os valores pares:  {Par}')
+print(f'Você digitou os valores Impares:  {impar}')
